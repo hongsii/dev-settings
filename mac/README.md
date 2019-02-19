@@ -20,7 +20,7 @@
 #### Spotlight키 변경
 
 * 한/영키 변환과 겹쳐서 변경 필요
-* 시스템 환경설정 > 키보드 > 단축키 > Spotlight > Spotlight 검색 보기 : `command + space`
+* 시스템 환경설정 > 키보드 > 단축키 > Spotlight > Spotlight 검색 보기 : `command + shift + space`
 
 ### 트랙패드
 
