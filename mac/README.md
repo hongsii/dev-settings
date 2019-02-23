@@ -33,6 +33,30 @@
 ### iTerm2
 // TODO
 
-### 
+#### brew
+// TODO
 
+#### tmux
+
+터미널 분할 프로그
+
+``` shell
+$ brew install tmux
+```
+
+`~/.tmux.conf` 를 만들고 내용을 추가하면 커스텀 설정을 할 수 있음  
+
+* 설정 조회 명령어
+    * `tmux show-options -g` : 전역 설정 조회
+    * `tmux show-options -w` : 윈도우 설정 조회
+    * `tmux show-options -s` : 서버 설정 조회
+
+설정 파일을 적용하려면 아래의 명령어를 입력
+
+``` shell
+$ tmux source-file ~/.tmux.conf
+```
+
+* 설정 명령어
+    * `set-option (alias: set)` : 설정 명령어 (set으로 축약해서 사용할 수 있음)
 
