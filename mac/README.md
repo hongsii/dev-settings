@@ -38,7 +38,7 @@
 
 #### tmux
 
-터미널 분할 프로그
+터미널 분할 프로그램 
 
 ``` shell
 $ brew install tmux
@@ -60,4 +60,4 @@ $ tmux source-file ~/.tmux.conf
 * 설정 명령어
     * `set-option (alias: set)` : 설정 명령어
     * `set-window-option (alias: setw)` : 윈도우 설정 명령어
-
+* [컬러표](https://i.stack.imgur.com/e63et.png)
