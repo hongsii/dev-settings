@@ -58,5 +58,6 @@ $ tmux source-file ~/.tmux.conf
 ```
 
 * 설정 명령어
-    * `set-option (alias: set)` : 설정 명령어 (set으로 축약해서 사용할 수 있음)
+    * `set-option (alias: set)` : 설정 명령어
+    * `set-window-option (alias: setw)` : 윈도우 설정 명령어
 
