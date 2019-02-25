@@ -61,3 +61,7 @@ $ tmux source-file ~/.tmux.conf
     * `set-option (alias: set)` : 설정 명령어
     * `set-window-option (alias: setw)` : 윈도우 설정 명령어
 * [컬러표](https://i.stack.imgur.com/e63et.png)
+
+#### fzf
+//TODO
+
