@@ -51,15 +51,32 @@ $ brew install zsh
 $ chsh -s /bin/zsh
 ```
 
-oh-my-zsh 테마 설정
+##### oh-my-zsh 설치
+
+아래 명령어 입력
 
 ``` shell
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
+powerline을 위한 폰트 설치 (새로운 폰트가 인식되지 않으면 맥 재시동)
+
+``` shell
 $ git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. rm -rf fonts
+```
 
-# Mac은 
-$ 
+##### zsh-syntax-highlighting 플러그인 설정
+
+oh-my-zsh 플러그인 매니저를 통해 플러그인 사용
+
+``` shell
+$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# .zshrc의 plugins에 zsh-syntax-highlighting 추가
+$ vim ~/.zshrc
+...
+plugins=(git ... zsh-syntax-highlighting)
+...
 ```
 
 #### tmux
