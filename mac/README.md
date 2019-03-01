@@ -31,9 +31,12 @@
 ## 프로그램
 
 ### iTerm2
-// TODO
+
+* [설치](https://www.iterm2.com/)
 
 #### brew
+
+Mac의 패키지 매니저
 
 * [Homebrew 설치](https://hongsii.github.io/2017/10/18/homebrew-설치/)
 
@@ -45,7 +48,7 @@
 $ brew install zsh
 ```
 
-기본쉘을 zsh 설정
+기본쉘을 zsh로 설정
 
 ``` shell
 $ chsh -s /bin/zsh
@@ -53,13 +56,13 @@ $ chsh -s /bin/zsh
 
 ##### oh-my-zsh 설치
 
-아래 명령어 입력
+설치
 
 ``` shell
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-powerline을 위한 폰트 설치 (새로운 폰트가 인식되지 않으면 맥 재시동)
+powerline을 문자를 표시하기 위한 폰트 설치 (새로운 폰트가 인식되지 않으면 맥 재시동)
 
 ``` shell
 $ git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. rm -rf fonts
