@@ -15,6 +15,7 @@ Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'
 Plugin 'johngrib/vim-mac-dictionary'
 Plugin 'plasticboy/vim-markdown' " Markdown syntax highlighting
+Plugin 'tpope/vim-surround'
 "Plugin 'Lokaltog/vim-powerline'
 call vundle#end()
 
