@@ -82,6 +82,19 @@ plugins=(git ... zsh-syntax-highlighting)
 ...
 ```
 
+#### fzf
+
+cli 검색 프로그램 
+
+``` shell
+# fzf 설치
+$ brew install fzf
+
+# 키 맵핑
+$ $(brew --prefix)/opt/fzf/install
+```
+* [설치 방법](https://github.com/junegunn/fzf#installation)
+
 #### tmux
 
 터미널 분할 프로그램 
