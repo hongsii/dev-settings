@@ -38,12 +38,6 @@
 
 프로그램을 완전히 종료해야 적용되기 때문에 `cmd + q`로 프로그램을 종료 후, 다시 실행
 
-
-
-### 트랙패드
-
-// TODO
-
 ---
 
 ## 프로그램
@@ -52,11 +46,15 @@
 
 * [설치](https://www.iterm2.com/)
 
+-----
+
 #### brew
 
 Mac의 패키지 매니저
 
 * [Homebrew 설치](https://hongsii.github.io/2017/10/18/homebrew-설치/)
+
+-----
 
 #### zsh
 
@@ -99,6 +97,7 @@ $ vim ~/.zshrc
 plugins=(git ... zsh-syntax-highlighting)
 ...
 ```
+-----
 
 #### fzf
 
@@ -112,6 +111,8 @@ $ brew install fzf
 $ $(brew --prefix)/opt/fzf/install
 ```
 * [설치 방법](https://github.com/junegunn/fzf#installation)
+
+-----
 
 #### tmux
 
@@ -139,7 +140,3 @@ $ tmux source-file ~/.tmux.conf
     * `set-option (alias: set)` : 설정 명령어
     * `set-window-option (alias: setw)` : 윈도우 설정 명령어
 * [컬러표](https://i.stack.imgur.com/e63et.png)
-
-#### fzf
-//TODO
-
