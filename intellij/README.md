@@ -8,7 +8,6 @@
 
 저장시 코드 정리해주는 플러그인
 
-
 ### IdeaVim
 
 * [키 반복 문제 개선](https://stackoverflow.com/questions/39606031/intellij-key-repeating-idea-vim)
