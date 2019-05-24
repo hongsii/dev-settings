@@ -16,6 +16,7 @@ Plugin 'iamcco/markdown-preview.vim'
 Plugin 'johngrib/vim-mac-dictionary'
 Plugin 'plasticboy/vim-markdown' " Markdown syntax highlighting
 Plugin 'tpope/vim-surround'
+Plugin 'mhinz/vim-startify'
 "Plugin 'Lokaltog/vim-powerline'
 call vundle#end()
 
