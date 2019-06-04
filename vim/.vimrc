@@ -3,22 +3,24 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'iamcco/mathjax-support-for-mkdp'
-Plugin 'iamcco/markdown-preview.vim'
-Plugin 'johngrib/vim-mac-dictionary'
-Plugin 'plasticboy/vim-markdown' " Markdown syntax highlighting
-Plugin 'tpope/vim-surround'
-Plugin 'mhinz/vim-startify'
-"Plugin 'Lokaltog/vim-powerline'
-call vundle#end()
+call plug#begin('~/.vim/plugged')
+Plug 'VundleVim/Vundle.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+Plug 'johngrib/vim-mac-dictionary'
+Plug 'plasticboy/vim-markdown' " Markdown syntax highlighting
+Plug 'tpope/vim-surround'
+Plug 'mhinz/vim-startify'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+"Plug 'Lokaltog/vim-powerline'
+call plug#end()
 
 filetype plugin indent on
 syntax on " 형식별 구문 강조 표시
