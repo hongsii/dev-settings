@@ -48,6 +48,7 @@
 ### iTerm2
 
 * [설치](https://www.iterm2.com/)
+* iTerm 3.3.0 버전부터 CPU / Mem 등 스테이터스바 이용 가능
 
 -----
 
