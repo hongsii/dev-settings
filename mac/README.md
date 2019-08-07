@@ -50,6 +50,15 @@
 * [설치](https://www.iterm2.com/)
 * iTerm 3.3.0 버전부터 CPU / Mem 등 스테이터스바 이용 가능
 
+#### 스테이터스 바 설정
+
+Preferences 메뉴
+
+* Preferences -> jAppearance -> General 에서 위치 설정 가능
+     * Status bar location : Top / Bottom
+* Preferences -> Profiles -> Select profile -> Session tab -> 하단의 Status bar enabled 설정 후, Configure Status Bar
+    * 배터리, CPU / Memory 사용률 / 네트워크 사용량 / 시계 / 커스텀 액션 설정 / Git 상태 등등 설정 가능
+
 -----
 
 #### brew
