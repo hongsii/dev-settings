@@ -58,6 +58,7 @@ Preferences 메뉴
      * Status bar location : Top / Bottom
 * Preferences -> Profiles -> Select profile -> Session tab -> 하단의 Status bar enabled 설정 후, Configure Status Bar
     * 배터리, CPU / Memory 사용률 / 네트워크 사용량 / 시계 / 커스텀 액션 설정 / Git 상태 등등 설정 가능
+    * Fixed-size Spacer / Empty Space : 두 개로 빈공간을 만들 수 있음
 
 -----
 
