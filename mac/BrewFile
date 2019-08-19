@@ -1,0 +1,19 @@
+########## Terminal apps ##########
+brew "git"
+brew "mas"
+###################################
+
+########## Desktop Apps ##########
+cask "docker"
+cask "visual-studio-code"
+
+# Todo app https://www.notion.so
+cask "notion"
+cask "google-chrome"
+##################################
+
+########## App Store ##########
+mas "KakaoTalk", id: 869223134
+mas "Magnet", id: 441258766
+mas "Xcode", id: 497799835
+###############################
