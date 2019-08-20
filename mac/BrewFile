@@ -6,6 +6,7 @@ brew "mas"
 ########## Desktop Apps ##########
 cask "docker"
 cask "visual-studio-code"
+cask "mysqlworkbench"
 
 # Todo app https://www.notion.so
 cask "notion"
