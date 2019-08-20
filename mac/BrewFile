@@ -7,6 +7,7 @@ brew "mas"
 cask "docker"
 cask "visual-studio-code"
 cask "mysqlworkbench"
+cask "iterm2"
 
 # Todo app https://www.notion.so
 cask "notion"
