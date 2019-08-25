@@ -11,6 +11,8 @@ cask "iterm2"
 
 cask "notion" # Todo app https://www.notion.so
 cask "google-chrome"
+
+cask "vmware-horizon-client"
 ##################################
 
 ########## App Store ##########
