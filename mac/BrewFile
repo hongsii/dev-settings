@@ -4,6 +4,7 @@ brew "mas"
 ###################################
 
 ########## Desktop Apps ##########
+cask "intellij-idea"
 cask "docker"
 cask "visual-studio-code"
 cask "mysqlworkbench"
