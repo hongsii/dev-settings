@@ -1,5 +1,10 @@
 #! /bin/bash
 
+if [ ! -x "$(command -v brew)" ]; then
+    echo "Brew must be installed"
+    exit 1
+fi
+
 echo "Install zsh"
 brew install zsh
 

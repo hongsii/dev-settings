@@ -1,5 +1,10 @@
 #! /bin/bash
 
+if [ ! -x "$(command -v brew)" ]; then
+    echo "Brew must be installed"
+    exit 1
+fi
+
 tmux_pkg_name=tmux
 if brew list -1 | grep -q "^${tmux_pkg_name}\$"; then
     echo "'$tmux_pkg_name' is installed"
