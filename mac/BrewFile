@@ -1,6 +1,7 @@
 ########## Terminal apps ##########
 brew "git"
 brew "mas"
+brew "nvm"
 ###################################
 
 ########## Desktop Apps ##########
