@@ -154,3 +154,13 @@ $ tmux source-file ~/.tmux.conf
     * `set-option (alias: set)` : 설정 명령어
     * `set-window-option (alias: setw)` : 윈도우 설정 명령어
 * [컬러표](https://i.stack.imgur.com/e63et.png)
+
+#### vscode
+
+##### Shell Command 설치
+
+* 팔레트(⇧ ⌘ P) 실행
+* 'shell command' 입력
+* 'Shell Command: Install 'code' command in PATH' 선택
+* 재시작 (터미널에서 code 명령어 사용 가능)
+
