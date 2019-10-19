@@ -16,4 +16,4 @@ echo "Install mas for app store"
 brew install mas
 
 echo "Install bundle"
-brew bundle
+brew bundle --file=./BrewFile
