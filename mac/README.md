@@ -95,7 +95,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 powerline을 문자를 표시하기 위한 폰트 설치 (새로운 폰트가 인식되지 않으면 맥 재시동)
 
 ``` shell
-$ git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. rm -rf fonts
+$ git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. && rm -rf fonts
 ```
 
 ##### zsh-syntax-highlighting 플러그인 설정
