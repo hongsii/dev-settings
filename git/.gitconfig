@@ -1,13 +1,14 @@
 [alias]
     co = "!f() { \
-            args=$@; \
-            if [ -z \"$args\" ]; then \
-                branch=$(git branch | grep -v HEAD | fzf --preview 'echo {} | cut -c 3- | xargs git log --color --graph' | cut -c 3-); \
-                git checkout $(echo $branch | sed 's#remotes/[^/]*/##'); \
-            elif [[ \"${args[@]}\" =~ '--all' ]]; then \
-                branch=$(git branch --all | grep -v HEAD | fzf --preview 'echo {} | cut -c 3- | xargs git log --color --graph' | cut -c 3-); \
-                git checkout $(echo $branch | sed 's#remotes/[^/]*/##'); \
-            else \
-                git checkout $args; \
-            fi \
-        }; f"
+        readonly ALL_BRANCHES='--all'; \
+        branch_type=''; \
+        if [ \"${#@}\" == 1 ] && [[ \"${@}\" =~ \"$ALL_BRANCHES\" ]]; then \
+            branch_type=$ALL_BRANCHES; \
+        fi; \
+        if [ -z $@ ] || [ \"$branch_type\" == \"$ALL_BRANCHES\" ]; then \
+            branch=$(git branch $branch_type | grep -v HEAD | fzf --preview 'echo {} | cut -c 3- | xargs git log --color --graph' | cut -c 3-); \
+            git checkout $(echo $branch | sed 's#remotes/[^/]*/##'); \
+        else \
+            git checkout $args; \
+        fi \
+    }; f"
