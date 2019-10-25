@@ -1,12 +1,13 @@
 [alias]
     co = "!f() { \
-        readonly ALL_BRANCHES='--all'; \
-        branch_type=''; \
-        if [ \"${#@}\" == 1 ] && [[ \"${@}\" =~ \"$ALL_BRANCHES\" ]]; then \
-            branch_type=$ALL_BRANCHES; \
+        readonly INCLUDE_REMOTE_OPTION='all'; \
+        args=( \"$@\" ); \
+        if [ \"${#args[@]}\" == 1 ] && [[ \"${args[*]}\" =~ ^\"$INCLUDE_REMOTE_OPTION\"$ ]]; then \
+            include_remote='--all'; \
         fi; \
-        if [ -z $@ ] || [ \"$branch_type\" == \"$ALL_BRANCHES\" ]; then \
-            branch=$(git branch $branch_type | grep -v HEAD | fzf --preview 'echo {} | cut -c 3- | xargs git log --color --graph' | cut -c 3-); \
+        if [ -z $args ] || [ $include_remote ]; then \
+            echo 'hi'; \
+            branch=$(git branch $include_remote | grep -v HEAD | fzf --preview 'echo {} | xargs git log --color --graph'); \
             git checkout $(echo $branch | sed 's#remotes/[^/]*/##'); \
         else \
             git checkout $args; \
