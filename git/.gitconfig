@@ -13,3 +13,4 @@
             git checkout $args; \
         fi \
     }; f"
+    aa = "!git reset && git add $(git status -s | fzf -m | awk '{print $2}')"
