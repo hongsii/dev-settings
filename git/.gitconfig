@@ -6,8 +6,7 @@
             include_remote='--all'; \
         fi; \
         if [ -z $args ] || [ $include_remote ]; then \
-            echo 'hi'; \
-            branch=$(git branch $include_remote | grep -v HEAD | fzf --preview 'echo {} | xargs git log --color --graph'); \
+            branch=$(git branch $include_remote | grep -v HEAD | awk '{print $2}' | fzf --preview 'echo {} | xargs git log --color --graph'); \
             git checkout $(echo $branch | sed 's#remotes/[^/]*/##'); \
         else \
             git checkout $args; \
