@@ -24,3 +24,7 @@
             git branch $include_remote | grep -v HEAD | fzf --preview 'echo {} | cut -c 3- | xargs git log --color --graph' | cut -c 3-; \
         fi; \
     }; f"
+    cm = "!f() { \
+        commit_hash=$(git log --oneline | fzf --preview \"echo {} | cut -c 1-7 | xargs git log -n 1 --pretty=format:%s%n%n%b\" | awk '{ print $1}'); \
+        git commit -c $commit_hash; \
+    }; f"
