@@ -25,7 +25,5 @@
             git branch | grep -v HEAD | fzf --preview 'echo {} | cut -c 3- | xargs git log --color --graph'; \
         elif [ $1 = 'll' ]; then \
             git branch | grep -v '^\\*'; \
-        else \
-            git b help; \
         fi; \
         }; f"
