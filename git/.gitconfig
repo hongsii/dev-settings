@@ -8,22 +8,19 @@
             include_remote='--all'; \
         fi; \
         if [ -z $args ] || [ $include_remote ]; then \
-            branch=$(git branch $include_remote | grep -v HEAD | awk '{print $2}' | fzf --preview 'echo {} | xargs git log --color --graph'); \
-            git checkout $(echo $branch | sed 's#remotes/[^/]*/##'); \
+            branch=$(git b list $include_remote); \
+            if [ $branch ]; then git checkout $branch; fi; \
         else \
             git checkout $args; \
         fi \
     }; f"
     aa = "!git reset && git add $(git status -s | fzf -m | awk '{print $2}')"
     b = "!f() { \
-        if [ $1 = 'd' -o $1 = 'D' ]; then \
-            git branch -$1; \
-        elif [ $1 = 'l' -o $1 = 'list' ]; then \
-            if [ $2 = '--all' ]; then \
-                include_remote=$2; \
-            fi; \
-            git branch | grep -v HEAD | fzf --preview 'echo {} | cut -c 3- | xargs git log --color --graph'; \
-        elif [ $1 = 'll' ]; then \
-            git branch | grep -v '^\\*'; \
+        if [ $1 = 'd' ] || [ $1 = 'D' ]; then \
+            branch=$(git b list); \
+            if [ $branch ]; then git branch -$1 $branch; fi; \
+        elif [ $1 = 'l' ] || [ $1 = 'list' ]; then \
+            if [ $2 ] && [ $2 = '--all' ]; then include_remote=$2; fi; \
+            git branch $include_remote | grep -v HEAD | fzf --preview 'echo {} | cut -c 3- | xargs git log --color --graph' | cut -c 3-; \
         fi; \
-        }; f"
+    }; f"
