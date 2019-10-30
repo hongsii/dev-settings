@@ -16,3 +16,5 @@
 [includeIf "gitdir:~/hongsii/"]
     path = .gitconfig-hongsii
 ```
+
+alias 적용하기
