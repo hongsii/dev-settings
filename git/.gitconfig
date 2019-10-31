@@ -28,3 +28,7 @@
         commit_hash=$(git log --oneline | fzf --preview \"echo {} | cut -c 1-7 | xargs git log -n 1 --pretty=format:%s%n%n%b\" | awk '{ print $1}'); \
         git commit -c $commit_hash; \
     }; f"
+    rh = "!f() { \
+        commit_hash=$(git log --oneline | fzf --preview \"echo {} | cut -c 1-7 | xargs git log -n 1 --pretty=format:%s%n%n%b\" | awk '{ print $1}'); \
+        git reset --hard $commit_hash; \
+    }; f"
