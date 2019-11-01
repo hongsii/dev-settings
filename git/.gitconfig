@@ -32,3 +32,4 @@
         commit_hash=$(git log --oneline | fzf --preview \"echo {} | cut -c 1-7 | xargs git log -n 1 --pretty=format:%s%n%n%b\" | awk '{ print $1}'); \
         git reset --hard $commit_hash; \
     }; f"
+    m = "git merge $(git b l)"
