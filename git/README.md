@@ -1,4 +1,4 @@
-* 디렉토리별 Git 설정 적용 - [링크](https://blog.outsider.ne.kr/1448)
+# 디렉토리별 Git 설정 적용 - [링크](https://blog.outsider.ne.kr/1448)
 
 ```
 [user]
@@ -17,4 +17,9 @@
     path = .gitconfig-hongsii
 ```
 
-alias 적용하기
+# alias 적용하기
+
+``` git
+[alias]
+별칭=액션
+```
