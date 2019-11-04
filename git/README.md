@@ -19,6 +19,8 @@
 
 # alias 적용하기
 
+.gitconfig 내용 복사
+
 ``` git
 [alias]
 별칭=액션
