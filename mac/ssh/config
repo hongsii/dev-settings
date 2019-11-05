@@ -1,1 +1,4 @@
 Include ~/.ssh/config.d/*
+
+# 60초마다 서버로 신호를 보내 연결 유지
+ServerAliveInterval 60
