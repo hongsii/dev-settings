@@ -164,3 +164,5 @@ $ tmux source-file ~/.tmux.conf
 * 'Shell Command: Install 'code' command in PATH' 선택
 * 재시작 (터미널에서 code 명령어 사용 가능)
 
+
+#### python 설치
