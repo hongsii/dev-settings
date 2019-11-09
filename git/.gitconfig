@@ -11,7 +11,7 @@
             branch=$(git b list $include_remote); \
             if [ $branch ]; then git checkout $branch; fi; \
         else \
-            git checkout $args; \
+            git checkout $@; \
         fi \
     }; f"
     aa = "!git reset && git add $(git status -s | fzf -m | awk '{print $2}')"
