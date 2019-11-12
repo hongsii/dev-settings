@@ -2,6 +2,7 @@
 brew "git"
 brew "mas"
 brew "nvm"
+brew "python"
 ###################################
 
 ########## Desktop Apps ##########
