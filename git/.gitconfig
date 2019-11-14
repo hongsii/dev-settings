@@ -24,11 +24,11 @@
             git branch $include_remote | grep -v HEAD | fzf --preview 'echo {} | cut -c 3- | xargs git log --color --graph' | cut -c 3-; \
         fi; \
     }; f"
-    cm = "git commit -m $1"
-    c = "git commit"
+    cm = "!git commit -m $1"
+    c = "!git commit"
     rs = "!f() { \
         commit_hash=$(git log --oneline | fzf --preview \"echo {} | cut -c 1-7 | xargs git log -n 1 --pretty=format:%s%n%n%b\" | awk '{ print $1}'); \
         git reset $@ $commit_hash; \
     }; f"
-    m = "git merge $@ $(git b l)"
+    m = "!git merge $@ $(git b l)"
     
