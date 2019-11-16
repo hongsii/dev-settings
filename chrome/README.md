@@ -23,3 +23,8 @@ GitHub Repository 파일의 커밋마다 변경된 내용을 한눈에 볼 수 �
 ## [Sourcegraph](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack)
 
 코드 리뷰 시 정의된 변수 나 클래스의 내용을 조회할 수 있는 플러그인
+
+## [Refined Github](https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
+
+Github 웹페이지의 인터페이스를 효율적으로 바꿔주는 플러그인
+
