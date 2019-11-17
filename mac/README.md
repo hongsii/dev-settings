@@ -166,3 +166,7 @@ $ tmux source-file ~/.tmux.conf
 
 
 #### python 설치
+
+#### Ruby 설치
+
+* gem install bropages : 쉘 명령어 사용법
