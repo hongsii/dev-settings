@@ -1,6 +1,7 @@
 [alias]
     alias = "!git config --list | egrep '^alias.+' | sed -e 's/^alias\\.//' | sed -e 's/^[^=]*=/\\'$'\\033[31m&\\033[(B\\033[m/'"
-    s = status -s
+    s = status
+    ss = status -s
     co = "!f() { \
         readonly INCLUDE_REMOTE_OPTION='all'; \
         args=( \"$@\" ); \
