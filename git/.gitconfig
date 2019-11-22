@@ -17,6 +17,7 @@
     }; f"
     aa = "!git add $(git status -s | fzf -m | awk '{print $2}')"
     raa = "!git reset && git add $(git status -s | fzf -m | awk '{print $2}')"
+    r = "!git reset $@"
     b = "!f() { \
         if [ $1 = 'd' ] || [ $1 = 'D' ]; then \
             branch=$(git b list); \
