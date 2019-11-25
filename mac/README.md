@@ -170,3 +170,7 @@ $ tmux source-file ~/.tmux.conf
 #### Ruby 설치
 
 * gem install bropages : 쉘 명령어 사용법
+
+#### 맥 전체 설정
+
+install.sh 실행
