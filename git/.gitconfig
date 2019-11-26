@@ -34,4 +34,4 @@
         git reset $@ $commit_hash; \
     }; f"
     m = "!git merge $@ $(git b l)"
-    
+    lp = "!git log -p"
