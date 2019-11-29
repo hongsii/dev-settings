@@ -35,3 +35,4 @@
     }; f"
     m = "!git merge $@ $(git b l)"
     lp = "!git log -p"
+    p = "!git pull $@"
