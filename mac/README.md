@@ -167,6 +167,10 @@ $ tmux source-file ~/.tmux.conf
 
 #### python 설치
 
+* python3 설치
+* 명령어 alias python3 -> python
+* pip 설치 : easy_install pip
+
 #### Ruby 설치
 
 * gem install bropages : 쉘 명령어 사용법
