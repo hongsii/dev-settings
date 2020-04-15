@@ -28,3 +28,7 @@ GitHub Repository 파일의 커밋마다 변경된 내용을 한눈에 볼 수 �
 
 Github 웹페이지의 인터페이스를 효율적으로 바꿔주는 플러그인
 
+
+## [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
+
+vim 단축키로 크롬을 사용할 수 있는 플러그인
